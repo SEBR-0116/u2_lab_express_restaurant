@@ -1,6 +1,8 @@
 const express = require('express')
 const cors = require('cors')
-const controller = require('./controller/controller.js')
+const appetizerscontroller = require('./controller/appetizersController.js')
+const entreesController = require('./controller/entreesController.js')
+const dessertsController = require('./controller/dessertsController.js')
 const PORT = process.env.PORT || 3002
 
 const app = express()
@@ -21,14 +23,14 @@ app.listen(PORT, () => {
 app.get('/', (req, res) => {
     res.send("welcome to my page!")
   })
-  app.get('/appetizers',controller.getAppetizers)
+  app.get('/appetizers',appetizerscontroller.getAppetizers)
 
-  app.get('/appetizers/:id',controller.getAppetizersById)
+  app.get('/appetizers/:id',appetizerscontroller.getAppetizersById)
   
-  app.get('/entrees',controller.getEntrees)
+  app.get('/entrees',entreesController.getEntrees)
 
-  app.get('/entrees/:id',controller.getEntreesById)
+  app.get('/entrees/:id',entreesController.getEntreesById)
 
-  app.get('/desserts',controller.getDesserts)
+  app.get('/desserts',dessertsController.getDesserts)
 
-  app.get('/desserts/:id',controller.getDessertsById)
+  app.get('/desserts/:id',dessertsController.getDessertsById)
