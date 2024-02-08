@@ -1,0 +1,28 @@
+{
+  "name": "u2_lab_express_restaurant",
+  "version": "1.0.0",
+  "description": "# The Express-taurant Menu App",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiaDHayes/u2_lab_express_restaurant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiaDHayes/u2_lab_express_restaurant/issues"
+  },
+  "homepage": "https://github.com/MiaDHayes/u2_lab_express_restaurant#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
