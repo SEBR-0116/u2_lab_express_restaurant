@@ -29,6 +29,8 @@ app.get('/desserts/cannoli', dessertController.getDessertCannoli)
 app.get('/desserts/panna-cotta', dessertController.getDessertPannaCotta)
 
 app.get('/entrees', entreeController.getEntrees)
+app.get('/entrees/chickenMarsala', entreeController.getEntreeChickenMarsala)
+app.get('/entrees/ravioli', entreeController.getEntrees)
 
 
 app.get(`/*`, (req, res) => {
