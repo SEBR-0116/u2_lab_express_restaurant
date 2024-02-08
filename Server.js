@@ -18,15 +18,12 @@ app.listen(PORT, () => console.log(`Server running on ${PORT}`))
 
 //apps
 app.get('/apps', appController.getApps)
-
 app.get('/apps/:id', appController.getAppById)
 
 //entrees
 app.get('/entrees', entreeController.getEntrees)
-
 app.get('/entrees/:id', entreeController.getEntreeById)
 
 //desserts
 app.get('/desserts', dessertController.getDesserts)
-
 app.get('/desserts/:id', dessertController.getDessertById)
