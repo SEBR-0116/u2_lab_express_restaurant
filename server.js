@@ -24,13 +24,10 @@ app.get('/', (req,res) => {
 
 
 app.get('/appetizers', appetizerController.getAppetizers)
-
 app.get('/appetizers/:id', appetizerController.getAppetizerById)
 
 app.get('/entrees', entreeController.getEntrees)
-
 app.get('/entrees/:id', entreeController.getEntreeById)
 
 app.get('/desserts', dessertController.getDesserts)
-
 app.get('/desserts/:id', dessertController.getDessertById)
