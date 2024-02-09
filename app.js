@@ -26,6 +26,6 @@ app.get('/entree', entreeController.getEntrees)
 
 
 //detail (show) route
-app.get('/cats/:id', appController.getApp)
-app.get('/dogs/:id', dessertController.getDessert)
-app.get('/dogs/:id', entreeController.getEntree)
+app.get('/appetizers/:id', appController.getApp)
+app.get('/desserts/:id', dessertController.getDessert)
+app.get('/entrees/:id', entreeController.getEntree)
