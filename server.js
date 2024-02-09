@@ -20,9 +20,11 @@ app.listen(PORT, () => console.log(`Serving up at our Restaurant ${PORT}`))
 // appetizers
 app.get('/appetizers', appetizerController.getAppetizers)
 app.get('/appetizers/:id', appetizerController.getAppetizersById)
+
 // entrees
 app.get('/entree', entreeController.getEntree)
 app.get('/entree/:id', entreeController.getEntreeById)
+
 // desserts
 app.get('/desserts', dessertController.getDessert)
 app.get('/desserts/:id', dessertController.getDessertById)

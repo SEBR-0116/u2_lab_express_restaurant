@@ -25,7 +25,9 @@ const appetizers = [
 const getAppetizers = (req, res) => {res.send(appetizers)}
 const getAppetizersById = (req, res) => {res.send(appetizers[req.params.id])}
 
+
 module.exports = {
   getAppetizers,
-  getAppetizersById
+  getAppetizersById,
+  getAppetizerByName
 }
